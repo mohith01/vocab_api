@@ -1,4 +1,3 @@
-import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
@@ -23,5 +22,4 @@ class Word():
     def as_dict(self):
         return {'word': self.word,'short_desc':self.short_desc, 'long_desc': self.long_desc, 'similardef':self.similar}
 
-w = Word('callow')
-print(w.word,w.short_desc,w.as_dict())  
+
