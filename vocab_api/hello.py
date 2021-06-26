@@ -15,9 +15,9 @@ class Word():
         r  = requests.get('https://www.vocabulary.com/dictionary/'+word1)
         soup = BeautifulSoup(r.content,features="lxml")
         self.word = word1
-        self.short_desc = soup.select('.short')
-        self.long_desc = soup.select('.long')
-        self.similar = soup.select("ol li")
+        self.short_desc = list(soup.select('.short'))
+        self.long_desc = list(soup.select('.long'))
+        self.similar = list(soup.select("ol li"))
 
     def as_dict(self):
         return {'word': self.word,'short_desc':self.short_desc, 'long_desc': self.long_desc, 'similardef':self.similar}
