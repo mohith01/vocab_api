@@ -8,7 +8,7 @@ def get_list(url):
     for i in range(len(list1)):
         list1[i] = list1[i].text
 
-    return res[1:]
+    return list1[1:]
 
 class Word():
     def __init__(self,word1):
