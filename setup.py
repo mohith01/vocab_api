@@ -13,7 +13,7 @@ LONG_DESCRIPTION = 'A package with vocabulary.com api.'
 
 # Setting up
 setup(
-    name="vocab_api", ,
+    name="vocab_api",
     version=VERSION,
     author="mohith01",
     author_email="<mohith01@neuralnine.com>",
